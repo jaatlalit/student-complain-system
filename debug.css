@@ -1,0 +1,55 @@
+body{
+    background-color: beige;
+}
+header{
+    color: brown;
+    background-color: aqua;
+    border: 3px solid blue;
+    padding: 4%;
+    border-radius: 4%;
+    font-size: 150%;
+    position: sticky;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: 10%;
+    text-align: center;
+    text-decoration: underline;
+}
+.lalit{
+    border: 3px solid red;
+    border-radius: 3%;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    background-color: yellow;
+    
+    margin-right: 5%;
+}
+.aman{
+    border: 3px solid red;
+    border-radius: 3%;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    float: center;
+    margin-right: 5%;
+}
+.akhil{
+    border: 3px solid red;
+    border-radius: 3%;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    float: center;
+}
+.lokendra{
+    border: 3px solid red;
+    border-radius: 3%;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    float: right;
+}
+
+
+

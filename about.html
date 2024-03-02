@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>e-Complain-box</title>
+</head>
+
+<body>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+
+    <nav class=" navbar navbar-expand-lg navbar sticky-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">e-Complain</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="bootweb.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="Blog.html">Blog</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Complain register</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Others
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Support</a>
+                        <a class="dropdown-item" href="#">Urgency</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Write for us</a>
+                    </div>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class=".mx-2">
+                <button type="button" class="btn btn-danger" data-toggle="modal"
+                    data-target="#SignUpModal">SignUp</button>
+                <button type="button" class="btn btn-danger " data-toggle="modal"
+                    data-target="#LogInModal">LogIn</button>
+            </div>
+
+        </div>
+    </nav>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+
+    </nav>
+    <!-- SignUp Modal -->
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SignUpModalLabel">Get an e-Complain account
+
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name">
+                            </div>
+                        </div>
+                    </form>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- LogIn Modal -->
+    <div class="modal fade" id="LogInModal" tabindex="-1" aria-labelledby="LogInModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LogInModalLabel">Log in to e-Complain</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="smart study.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome to the e-Complain box</h2>
+                    <h5>Here all your problems will get resolved</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="c6.jpg" class="d-block w-100"
+                    alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome to the e-Complain box</h2>
+                    <h5>Here all your problems will get resolved</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="c3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome to the e-Complain box</h2>
+                    <h5>Here all your problems will get resolved</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </button>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <img src="..." class="rounded mr-2" alt="...">
+            <strong class="mr-auto">Bootstrap</strong>
+            <small class="text-muted">11 mins ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            Other general problems in the hostels.
+        </div>
+    </div>
+    <div class="container d-flex justify-content-center align-items-center">
+        <section class="jumbotron text-center ">
+            <div class="container">
+                <h1>Other problems .</h1>
+                <p class="lead text-muted">Sometimes the problems are not that serious can can be handled by some minor
+                    councilling and guidance but this can only happen under some trained warden.The problem can be
+                    related to any small fights in hostel and some other mishappening.</p>
+                <p>
+                    <a href="https://aimetc.apeejay.edu/about-us/code-of-conduct/roles-responsibilities/565-hostel-warden"
+                        class="btn btn-primary my-2" target="_blank">Know more</a>
+                    <a href="form.html" class="btn btn-secondary my-2">donate for the cause</a>
+                </p>
+            </div>
+        </section>
+
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <div class="card-deck">
+        <div class="card">
+            <img src="b11.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">MBA Benifits</h5>
+                <br>
+                <p class="card-text">It is argued that women are held back in their efforts to achieve career
+                    advancement by inequitable opportunities to acquire and leverage career capital. Using career
+                    capital theory, this empirically grounded investigation examines how female MBAs report increases in
+                    knowing-how.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="b2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">College Life</h5>
+                <br>
+                <p class="card-text">College Life is one of the most remarkable and lovable times of an individual's
+                    life. Unlike School Life, College Life has a different experience, and a person needs to have this
+                    experience in his/her life. </p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="b3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Smart Study</h5>
+                <br>
+                <p class="card-text">Do you ever feel like your study habits simply aren’t cutting it? Do you wonder
+                    what you could be doing to perform better in class and on exams? Many students realize that their
+                    high school study habits aren’t very effective in college.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="jumbotron text-center bg-dark text-light">
+        <h1 class="display-4">Hello, Viewers!!!</h1>
+        <p class="lead">On this website you can get all the solutions right there related to the crimes and problems in
+            the hostel, we are having direct contacts with government of India and we will try our level best to help
+            you.</p>
+        <hr class="my-4">
+        <p>To learn about the anti ragging policy of the government of India please click the following.</p>
+        <a class="btn btn-primary btn-lg" href="https://indianlawwatch.com/practice/anti-ragging-laws-in-india/"
+            target="_blank" role="button">Learn more</a>
+    </div>
+    <br>
+    <br>
+    <div class="media mt-100">
+        <img src="https://source.unsplash.com/200x200/?code,tech" class="mr-3" alt="...">
+        <div class="media-body">
+            <h5 class="mt-0">Related</h5>
+            <p><b>Standing on the frontline when the bombs start to fall. Heaven is jealous of our love, angels are
+                    crying from up above. Can't replace you with a million rings. Boy, when you're with me I'll give you
+                    a taste. There’s no going back. Before you met me I was alright but things were kinda heavy. Heavy
+                    is the head that wears the crown.</b></p>
+
+            <div class="media mt-3">
+                <a class="mr-3" href="#">
+                    <img src="https://source.unsplash.com/200x200/?study,tech" alt="...">
+                </a>
+                <div class="media-body">
+                    <h5 class="mt-0">official notices</h5>
+                    <p><b> loved ones let's take a journey. Yes, we make angels cry, raining down on earth from up
+                            above. Give you something good to celebrate. I used to bite my tongue and hold my breath.
+                            I'm ma get your heart racing in my skin-tight jeans. As I march alone to a different beat.
+                            Summer after high school when we first met. You're so hypnotizing, could you be the devil?
+                            Could you be an angel? It's time to bring out the big balloons. Thought that I was the
+                            exception. Bikinis, zucchinis, Martinis, no weenies.</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <style>
+        .mypro{
+            border: 2px solid black;
+            display: block;
+            border-radius: 20px;
+            margin: 20px;
+            background-color: rgb(52, 50, 50);
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .xx{
+            text-align: center;
+            color: white;
+            margin: 8px;
+            padding: 20px;
+            text-decoration: underline;
+            font-size: xx-large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .yy{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+           
+            border: 4px solid grey;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            
+        }
+        .para{
+            text-align: center;
+            color: white;
+            font-size: large;
+        }
+
+
+    </style>
+    <div class="mypro">
+
+        <h2 class="xx">Creator Pannel</h2>
+        <img class="yy" src="lalitimg.JPG" alt="image" width="350">
+        <p class="para" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum voluptas iure possimus architecto sapiente
+            commodi ipsa iste ea consequatur odio mollitia aspernatur sed optio perferendis at aliquam, id a deleniti ad
+            ipsam voluptate animi. Placeat vel omnis tenetur quis modi, iure facere delectus unde dolorum, praesentium
+            facilis quia itaque quasi sed voluptatum, dolorem dolores atque maiores! Ducimus a vero Lorem ipsum dolor
+            sit amet consectetur, adipisicing elit. Aut magni sint expedita accusamus alias sequi dolores libero porro
+            dolorem iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ipsum. </p>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
+            <p>New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
+                    href="/docs/4.6/getting-started/introduction/">getting started guide</a>.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
